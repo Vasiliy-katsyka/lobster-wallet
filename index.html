@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wallet</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+            color: #333;
+        }
+
+        .container {
+            max-width: 400px;
+            height: 100%;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .header .title {
+            font-size: 1.5em;
+            font-weight: bold;
+        }
+
+        .header .actions {
+            display: flex;
+            align-items: center;
+        }
+
+        .actions button {
+            background-color: #f5f5f5;
+            border: none;
+            padding: 5px 10px;
+            margin-left: 10px;
+            border-radius: 5px;
+            font-size: 1em;
+            cursor: pointer;
+        }
+
+        .balance {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .balance .amount {
+            font-size: 2em;
+            font-weight: bold;
+            margin-right: 10px;
+        }
+
+        .balance .plus-icon {
+            font-size: 1.5em;
+            color: #3498db;
+        }
+
+        .buttons {
+            display: flex;
+            justify-content: space-around;
+            margin-bottom: 20px;
+        }
+
+        .buttons button {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-size: 1em;
+            cursor: pointer;
+        }
+
+        .buttons button:hover {
+            background-color: #eee;
+        }
+
+        .assets {
+            margin-bottom: 20px;
+        }
+
+        .asset {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .asset .icon {
+            display: flex;
+            align-items: center;
+        }
+
+        .asset .icon img {
+            width: 30px;
+            height: 30px;
+            margin-right: 10px;
+        }
+
+        .asset .name {
+            font-weight: bold;
+        }
+
+        .asset .balance {
+            font-size: 1em;
+            color: #666;
+        }
+
+        .add-funds {
+            padding: 10px;
+            border-radius: 5px;
+            background-color: #fff;
+            border: 1px solid #ddd;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+        }
+        
+        .add-funds-circle {
+            padding: 10px;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            background-color: #00FFFB;
+            border: 1px solid #ddd;
+            color: white;
+            font-size: 20px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            text-align: center;
+        }
+
+        .add-funds .icon {
+            margin-right: 10px;
+            font-size: 1.5em;
+        }
+
+        .add-funds .text {
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="title">Wallet</div>
+            <div class="actions">
+                <button>
+                    <i class="fas fa-ellipsis-v"></i>
+                </button>
+                <button>
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+        </div>
+        <div class="balance">
+            <div class="amount">$0.00</div>
+            <i class="fas fa-plus plus-icon"></i>
+        </div>
+        <div class="buttons">
+            <button>
+                <i class="fas fa-arrow-up"></i>
+                Send
+            </button>
+            <button>
+                <i class="fas fa-exchange-alt"></i>
+                Exchange
+            </button>
+            <button>
+                <i class="fas fa-credit-card"></i>
+                Sell
+            </button>
+        </div>
+        <div class="assets">
+            <div class="asset">
+                <div class="icon">
+                    <img src="https://github.com/Vasiliy-katsyka/fdsguai/blob/main/images/coin/coin-lobster.png?raw=true" alt="LOB Space">
+                    <div class="name">LOB Space Beta</div>
+                </div>
+                <div class="balance">$0.00</div>
+            </div>
+            <div class="asset">
+                <div class="icon">
+                    <img src="https://res.coinpaper.com/coinpaper/toncoin_ton_logo_c5fb8b4302.png" alt="Toncoin">
+                    <div class="name">Toncoin</div>
+                </div>
+                <div class="balance">$0.00</div>
+            </div>
+            <div class="asset">
+                <div class="icon">
+                    <img src="https://seeklogo.com/images/T/tether-usdt-logo-FA55C7F397-seeklogo.com.png" alt="Dollars">
+                    <div class="name">USDT</div>
+                </div>
+                <div class="balance">$0.00</div>
+            </div>
+        </div>
+        <button class="add-funds">
+            <i class="fas fa-plus icon"></i>
+            <div class="text">Top up using a bank card</div>
+        </button>
+
+    </div>
+    <script src="https://kit.fontawesome.com/your-font-awesome-kit-id.js" crossorigin="anonymous"></script>
+</body>
+</html>
